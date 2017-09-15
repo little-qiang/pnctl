@@ -41,7 +41,7 @@ class Task{
 				cli_set_process_title('php_pcntl_'.$mod);
 				$times = $i < $n ? $i : $n;
 				$this->worker->setProcessId($mod);
-				$this->worker->runWorker($times);
+				$this->worker->runWorker($mod);
 				exit();
 			}
 		}
